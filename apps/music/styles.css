@@ -41,8 +41,7 @@ a {
   padding: 20px;
 }
 
-.project-container {
-  text-align: left;
+.image-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -50,39 +49,17 @@ a {
   align-items: center;
 }
 
-.project-item {
-  min-height: 80px;
-  margin: 10px;
+.image-item {
+  max-height: 320px;
+  margin: 4px;
+  border-radius: 12px;
 }
 
-.project-item-image {
-  width: 160px;
-}
-
-.project-item-description {
-  width: 480px;
-}
-
-.developer-container {
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.developer-item {
-  min-height: 80px;
-  margin: 10px;
-}
-
-.developer-item-image {
-  width: 160px;
-}
-
-.developer-item-description {
-  width: 480px;
+.caption-text {
+  color: #6DE0C9;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 4px;
 }
 
 .app-logo {
@@ -91,21 +68,4 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.store-logo {
-  height: 40px;
-}
-
-.developer-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.learn-more-text {
-  color: #6DE0C9;
 }
