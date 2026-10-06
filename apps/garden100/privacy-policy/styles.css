@@ -1,13 +1,13 @@
 * {
   font-family: Ubuntu, sans-serif;
-  background-color: #333333;
-  color: #f2f2f2;
+  background-color: #faf6ed;
+  color: #333333;
 }
 
 body {
   font-family: Ubuntu, sans-serif;
-  background-color: #333333;
-  color: #f2f2f2;
+  background-color: #faf6ed;
+  color: #333333;
   margin: 0;
   padding: 20px;
 }
@@ -23,7 +23,7 @@ p {
 }
 
 a {
-  color: #9FB3F8;
+  color: #66AC80;
   background-color: transparent;
   text-decoration: none;
 }
