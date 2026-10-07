@@ -1,0 +1,88 @@
+* {
+  font-family: Ubuntu, sans-serif;
+  background-color: #faf6ed;
+  color: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 30px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: #66AC80;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-item {
+  max-height: 320px;
+  margin: 4px;
+  border-radius: 12px;
+}
+
+.caption-text {
+  color: #6DE0C9;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.app-logo {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-container {
+  line-height: 1.2;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-question {
+  margin: 10px 0px;
+}
+
+.faq-answer {
+  margin: 10px 10px;
+  color: #aeaeae;
+  font-size: 14px;
+}
