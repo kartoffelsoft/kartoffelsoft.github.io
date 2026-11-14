@@ -1,131 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartoffel Music — Offline Cloud MP3 Player</title>
+    <meta name="description" content="Download and organize your favorite MP3 music files from Google Drive to play offline anywhere without internet.">
+
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Kartoffelsoft</title>
   </head>
   <body>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+      <div class="top-nav-inner">
+        <a href="../../index.html" class="back-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Kartoffelsoft Home</span>
+        </a>
+        <span class="nav-tag">Offline Audio Player</span>
+      </div>
+    </nav>
+
     <div class="container">
-      <header>
-        <img class="app-logo" src="./images/kartoffel-music.png">
+      <header class="app-hero">
+        <img class="app-logo" src="./images/kartoffel-music.png" alt="Kartoffel Music Logo">
         <h1>Kartoffel Music</h1>
+        <p class="intro-lead">
+          Do you have MP3 music files that you want to keep forever? Upload them to your cloud and enjoy them on your phone! With Kartoffel Music, you can listen to your favorite tracks anytime, anywhere, without needing an active internet connection.
+        </p>
       </header>
-      <p>
-        Do you have mp3 music files that you want to keep forever? Upload it to Cloud and enjoy on your phone! 
-        With Kartoffel Music, you can enjoy your favorite musics anytime and anywhere, without the need for an internet connection.
-      </p>
-      <br />
-      <br />
-      <br />
-      <h2>How to use</h2>
-      <p>First, connect to your favorite Cloud and download your music files.</p>
+
+      <h2>How to Use</h2>
+      
+      <p class="step-label">1. Connect to your cloud storage and download your music</p>
       <div class="image-container">
-        <div>
-            <p class="caption-text">Tap to connect</p>
-            <img class="image-item" src="./images/snapshot-download-1.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Tap to connect</p>
+          <img class="image-item" src="./images/snapshot-download-1.png" alt="Connect cloud storage">
         </div>
-        <div>
-            <p class="caption-text">Select files</p>
-            <img class="image-item" src="./images/snapshot-download-2.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Select files</p>
+          <img class="image-item" src="./images/snapshot-download-2.png" alt="Select MP3 tracks">
         </div>
-        <div>
-            <p class="caption-text">Download</p>
-            <img class="image-item" src="./images/snapshot-download-3.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Download</p>
+          <img class="image-item" src="./images/snapshot-download-3.png" alt="Downloading files">
         </div>
-        <div>
-            <p class="caption-text">Done</p>
-            <img class="image-item" src="./images/snapshot-download-4.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Done</p>
+          <img class="image-item" src="./images/snapshot-download-4.png" alt="Download completed">
         </div>
       </div>
 
-      <br />
-
-      <p>Second, check downloaded files. It's now on your device.</p>
+      <p class="step-label">2. Check your downloaded tracks locally</p>
       <div class="image-container">
-        <div>
-            <p class="caption-text">Checkout folder tab</p>
-            <img class="image-item" src="./images/snapshot-library-1.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Explore folder tab</p>
+          <img class="image-item" src="./images/snapshot-library-1.png" alt="Library tab">
         </div>
-        <div>
-            <p class="caption-text">Tap to play</p>
-            <img class="image-item" src="./images/snapshot-library-2.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Tap to play</p>
+          <img class="image-item" src="./images/snapshot-library-2.png" alt="Playback selection">
         </div>
       </div>
 
-      <br />
-
-      <p>Third, create a playlist and add the downloaded files</p>
+      <p class="step-label">3. Create custom playlists</p>
       <div class="image-container">
-        <div>
-            <p class="caption-text">Name the playlist</p>
-            <img class="image-item" src="./images/snapshot-playlist-1.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Name playlist</p>
+          <img class="image-item" src="./images/snapshot-playlist-1.png" alt="Playlist creation">
         </div>
-        <div>
-            <p class="caption-text">Tap "+" to add </p>
-            <img class="image-item" src="./images/snapshot-playlist-2.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Tap "+" to add</p>
+          <img class="image-item" src="./images/snapshot-playlist-2.png" alt="Add songs">
         </div>
-        <div>
-            <p class="caption-text">Select files</p>
-            <img class="image-item" src="./images/snapshot-playlist-3.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Select files</p>
+          <img class="image-item" src="./images/snapshot-playlist-3.png" alt="Select tracks for playlist">
         </div>
-        <div>
-            <p class="caption-text">Done. Tap Play button</p>
-            <img class="image-item" src="./images/snapshot-playlist-4.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Tap play button</p>
+          <img class="image-item" src="./images/snapshot-playlist-4.png" alt="Playlist ready">
         </div>
       </div>
 
-      <br />
-
-      <p>Enjoy!</p>
+      <p class="step-label">4. Enjoy pure offline listening</p>
       <div class="image-container">
-        <div>
-            <img class="image-item" src="./images/snapshot-player-1.png">
+        <div class="screenshot-card">
+          <p class="caption-text">Now playing</p>
+          <img class="image-item" src="./images/snapshot-player-1.png" alt="Kartoffel Music player screen">
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <div>
-        <iframe width="400" height="600"
-          src="https://youtube.com/embed/wvcTb_aZo14">
+
+      <h2>Video Demonstration</h2>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/wvcTb_aZo14" 
+          title="Kartoffel Music Demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
         </iframe>
       </div>
-      <br />
-      <br />
-      <br />
-      <h2>FAQ</h2>
+
+      <h2>Frequently Asked Questions</h2>
       <div class="faq-container">
-        <div class="faq-question">
-          Q. I have bunch of mp3 music files on my PC. How do I trasnfer those files to Kartoffel Music app?
+        <div class="faq-card">
+          <div class="faq-question">
+            Q. I have a collection of MP3 files on my computer. How do I transfer them to Kartoffel Music?
+          </div>
+          <div class="faq-answer">
+            Google Drive is a great, secure place to store your private audio files. Simply upload your MP3s to your <a href="https://www.google.com/drive/" target="_blank" rel="noopener">Google Drive</a>, open Kartoffel Music on your device, and connect your Google Drive to sync and download them directly for offline playback.
+          </div>
         </div>
-        <div class="faq-answer">
-          Google Drive is great place to store your private data. 
-          Visit to <a href="https://www.google.com/drive/">Google Drive</a> and upload your files.
-          Then, download Kartoffel Music app and you can connect to Google Drive.
-        </div>
-        <br />
-        <div class="faq-question">
-          Q. Personally, I am using other Cloud storage other than Google. eg. DropBox. 
-          Do I have to sign up for Google Drive?
-        </div>
-        <div class="faq-answer">
-          Unfortunately, yes. You do need to sign up for Google Drive for now. But we are working towards supporting other Cloud storages, namely, DropBox and Microsoft One Drive.      
+
+        <div class="faq-card">
+          <div class="faq-question">
+            Q. Do you support other cloud storage providers (e.g. Dropbox, OneDrive)?
+          </div>
+          <div class="faq-answer">
+            Currently, Google Drive is the primary supported cloud provider. We are actively working toward supporting additional cloud backends including Dropbox and Microsoft OneDrive.
+          </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <p>
+
+      <div class="links-section">
+        <a href="../../index.html">&larr; Kartoffelsoft Home</a>
         <a href="./privacy-policy/">Privacy Policy</a>
-      </p>
-      <p>
         <a href="./google-api-disclosure/">Google API Disclosure</a>
-      </p>
-    <footer>
-      <p>© 2023 Kartoffelsoft. All Rights Reserved.</p>
-    </footer>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Kartoffelsoft. All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
-

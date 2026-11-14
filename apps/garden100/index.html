@@ -1,169 +1,163 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <title>Garden100 — US Stock Portfolio Tracker</title>
+  <meta name="description" content="Garden100 is a simple, privacy-first portfolio monitoring app for US stocks. Your data stays in your own Google Sheet.">
 
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-  <title>Garden100</title>
 </head>
 
 <body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <a href="../../index.html" class="back-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Kartoffelsoft Home</span>
+      </a>
+      <span class="nav-tag">Portfolio Monitor</span>
+    </div>
+  </nav>
+
   <div class="container">
 
-    <header> <img class="app-logo" src="./images/garden100.png" alt="Garden100">
+    <header class="app-hero">
+      <img class="app-logo" src="./images/garden100.png" alt="Garden100 Logo">
       <h1>Garden100</h1>
+      <p class="app-tagline">Watch your financial garden grow with complete privacy.</p>
     </header>
 
-    <p> Investing in stocks is like growing a garden. You plant your investments, watch them grow, and take care of them
-      over time. </p>
-
-    <p> Garden100 is a simple portfolio monitoring app for US stocks. Create your own portfolios, keep an eye on your
-      investments, and enjoy watching your financial garden grow. </p>
-
-    <p> I originally created Garden100 for my family — one portfolio for me and one for my daughter. It is designed for
-      monitoring and learning, rather than buying or selling stocks. </p>
-
-    <br /> <br />
+    <div class="intro-lead">
+      <p>
+        Investing in stocks is like growing a garden. You plant your investments, watch them grow, and care for them over time.
+      </p>
+      <p>
+        Garden100 is a simple portfolio monitoring app for US stocks. Create your own portfolios, keep an eye on your investments, and enjoy watching your financial garden flourish.
+      </p>
+      <p>
+        Originally created for family use — one portfolio for me and one for my daughter — it is designed specifically for calm monitoring and learning, rather than active day-trading or buying and selling.
+      </p>
+    </div>
 
     <h2>Your Portfolio, Your Data</h2>
 
-    <p> Garden100 uses Google Sheets to store your portfolio information. Your portfolio data stays in your own Google
-      Sheet. </p>
+    <p>
+      Garden100 uses Google Sheets to store your portfolio information. Your portfolio data stays entirely in your own Google Sheet.
+    </p>
 
-    <p> Our servers do not store your portfolio information. We only provide additional information that makes the app
-      useful, such as dividend data, company information, and stock search. </p>
+    <p>
+      Our servers do not store your portfolio information. We only provide supplementary public market data that makes the app useful, such as dividend histories, company overviews, and ticker search.
+    </p>
 
-    <p> <strong>We don't collect your portfolio data.</strong> </p>
-
-    <br />
-
-    <h2>How to use</h2>
-
-    <p> Create a portfolio in Garden100. Your portfolio and financial data are stored in your own Google Sheet. </p>
-
-    <p> Garden100 reads the data from your Google Sheet and turns it into an easy-to-use portfolio view, helping you
-      monitor your investments over time. </p>
-
-    <p> Your data stays in your Google Sheet. </p> :::
-
-    <div class="image-container">
-
-      <div>
-        <p class="caption-text">Create your portfolio</p> <img class="image-item" src="./images/snapshot-download-1.png"
-          alt="">
-      </div>
-
-      <div>
-        <p class="caption-text">Track your stocks</p> <img class="image-item" src="./images/snapshot-download-2.png"
-          alt="">
-      </div>
-
-      <div>
-        <p class="caption-text">Check company information</p> <img class="image-item"
-          src="./images/snapshot-download-3.png" alt="">
-      </div>
-
-      <div>
-        <p class="caption-text">Watch your garden grow</p> <img class="image-item"
-          src="./images/snapshot-download-4.png" alt="">
-      </div>
-
+    <div class="callout-box">
+      <p>🔒 <strong>Zero Data Harvesting:</strong> We never collect, sell, or store your portfolio data on our servers.</p>
     </div>
 
-    <br /> <br />
+    <h2>How It Works</h2>
+
+    <p>
+      Create a portfolio in Garden100. Your portfolio data is stored and kept securely inside your own personal Google Sheet.
+    </p>
+
+    <p>
+      Garden100 reads the data directly from your Google Sheet and presents it in a beautiful, easy-to-use interface, helping you observe your investments over time.
+    </p>
+
+    <div class="image-container">
+      <div class="screenshot-card">
+        <p class="caption-text">1. Create Portfolio</p>
+        <img class="image-item" src="./images/snapshot-download-1.png" alt="Create your portfolio in Garden100">
+      </div>
+
+      <div class="screenshot-card">
+        <p class="caption-text">2. Track Stocks</p>
+        <img class="image-item" src="./images/snapshot-download-2.png" alt="Track your stocks in Garden100">
+      </div>
+
+      <div class="screenshot-card">
+        <p class="caption-text">3. Company Details</p>
+        <img class="image-item" src="./images/snapshot-download-3.png" alt="Check company information">
+      </div>
+
+      <div class="screenshot-card">
+        <p class="caption-text">4. Watch It Grow</p>
+        <img class="image-item" src="./images/snapshot-download-4.png" alt="Watch your garden grow">
+      </div>
+    </div>
 
     <h2>Why Google Sheets?</h2>
 
-    <p> We wanted your portfolio to remain under your control. That's why your portfolio is stored in your own Google
-      Sheet instead of on our servers. </p>
-
-    <p> You can see and manage your data yourself, using a familiar tool that you already know. </p>
-
-    <br />
-
-    <h2>What does our server do?</h2>
-
-    <p> Garden100's server provides additional information that would be difficult to maintain entirely inside the app.
+    <p>
+      We believe you should remain in complete control of your financial records. Storing your portfolio in your own Google Sheet instead of a proprietary third-party database means:
     </p>
+    <ul>
+      <li>You can inspect, export, and edit your data anytime using a tool you already know and trust.</li>
+      <li>You aren't locked into our app or service.</li>
+      <li>If our server goes down, your records remain completely safe in your Google Drive.</li>
+    </ul>
 
-    <p> This includes information such as: </p>
+    <h2>What Does Our Server Do?</h2>
 
     <p>
-      Dividend information <br/>
-      Company information <br/>
-      Stock and company search <br/>
-      Other miscellaneous market information <br/>
+      Garden100's server only supplies publicly available market metadata that is difficult to maintain inside a static spreadsheet:
+    </p>
+    <ul>
+      <li>Historical dividend distributions and yields</li>
+      <li>Company profile overviews and market sectors</li>
+      <li>Stock ticker search and discovery</li>
+    </ul>
+    <p>
+      Your private holdings, share amounts, and balances are never sent to or logged on our server.
     </p>
 
-    <p> Your personal portfolio is not stored on our server. </p>
-
-    <br /> <br />
-
-    <h2>FAQ</h2>
+    <h2>Frequently Asked Questions</h2>
 
     <div class="faq-container">
+      <div class="faq-card">
+        <div class="faq-question">Q. Is this a real trading app?</div>
+        <div class="faq-answer">No. Garden100 is purely a portfolio monitoring and tracking app. It does not execute stock trades or hold customer funds.</div>
+      </div>
 
-      <div class="faq-question"> Q. Is this a real trading app? </div>
+      <div class="faq-card">
+        <div class="faq-question">Q. Where is my portfolio data stored?</div>
+        <div class="faq-answer">Your portfolio information is stored in your personal Google Sheet in your Google Drive. Garden100 does not store your holdings on its servers.</div>
+      </div>
 
-      <div class="faq-answer"> No. Garden100 is a portfolio monitoring app. It does not execute stock trades. You can
-        use it to monitor hypothetical or personal investment portfolios. </div>
+      <div class="faq-card">
+        <div class="faq-question">Q. Do you collect my personal financial records?</div>
+        <div class="faq-answer">No. We never collect, harvest, or monetize your portfolio records.</div>
+      </div>
 
-      <br />
+      <div class="faq-card">
+        <div class="faq-question">Q. Why do I need Google Sheets?</div>
+        <div class="faq-answer">Google Sheets gives you a reliable, free, and accessible home for your records while leaving you in 100% control of your data.</div>
+      </div>
 
-      <div class="faq-question"> Q. Where is my portfolio data stored? </div>
-
-      <div class="faq-answer"> Your portfolio information is stored in your own Google Sheet. Garden100 does not store
-        your portfolio on its servers. </div>
-
-      <br />
-
-      <div class="faq-question"> Q. Do you collect my portfolio information? </div>
-
-      <div class="faq-answer"> No. We don't collect or store your portfolio information. Our server is used to provide
-        additional stock and company information needed by the app. </div>
-
-      <br />
-
-      <div class="faq-question"> Q. Why do I need Google Sheets? </div>
-
-      <div class="faq-answer"> Google Sheets gives you a simple and familiar place to keep your portfolio data while
-        keeping the data under your control. </div>
-
-      <br />
-
-      <div class="faq-question"> Q. Can I use Garden100 to buy or sell stocks? </div>
-
-      <div class="faq-answer"> No. Garden100 does not provide trading functionality. It is designed for portfolio
-        monitoring and learning. </div>
-
-      <br />
-
-      <div class="faq-question"> Q. Is Garden100 financial advice? </div>
-
-      <div class="faq-answer"> No. Garden100 is a portfolio monitoring tool and does not provide investment, financial,
-        tax, or other professional advice. Please make your own investment decisions or consult a qualified
-        professional. </div>
-
+      <div class="faq-card">
+        <div class="faq-question">Q. Is Garden100 financial or investment advice?</div>
+        <div class="faq-answer">No. Garden100 is an informational monitoring tool and does not provide financial, investment, legal, or tax advice. Always do your own research or consult an accredited professional.</div>
+      </div>
     </div>
 
-    <br /> <br /> <br />
-
-    <p> <a href="./privacy-policy/">Privacy Policy</a> </p>
-
-    <p> <a href="./google-api-disclosure/">Google API Disclosure</a> </p>
+    <div class="links-section">
+      <a href="../../index.html">← Kartoffelsoft Home</a>
+      <a href="./privacy-policy/">Privacy Policy</a>
+      <a href="./terms-of-service/">Terms of Service</a>
+    </div>
 
     <footer>
-      <p>© Kartoffelsoft. All Rights Reserved.</p>
+      <p>&copy; 2026 Kartoffelsoft. All Rights Reserved.</p>
     </footer>
 
   </div>
 </body>
-
 </html>

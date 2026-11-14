@@ -1,87 +1,445 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartoffelsoft — Thoughtful, Privacy-First Software</title>
+    <meta name="description" content="Kartoffelsoft builds focused, offline-first, and privacy-respecting applications for iOS, Android, and macOS.">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <title>Kartoffelsoft</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Welcome to Kartoffelsoft!</h1>
-      </header>
-      <p>
-        Kartoffelsoft is a group of like-minded individuals who share a passion for technology and software development.
-        We strive to resolve problems in our daily life with technologies.
-      </p>
-      <br />
-      <br />
-      <br />
-      <h2>Projects</h2>
-      <div class="project-container"> 
-        <div class="project-item project-item-image">
-          <a href="./apps/music/index.html">
-            <img class="app-logo" src="./images/kartoffel-music.png">
-          </a>
-        </div> 
-        <div class="project-item project-item-description">
-          <h3>Kartoffel Music</h3>
-          <p>
-            Simple yet beautiful App to play your MP3 files offline, eliminating the need for a stable internet connection.
-          </p>
-          <p>
-            <a href="./apps/music/index.html"><i class="learn-more-text">Continue reading...</i></a>
-          </p>
-          <img class="store-logo" src="./images/appstore.svg"> <img class="store-logo" src="./images/playstore.png">
-        </div>  
-        <div class="project-item project-item-image">
-          <a href=".">
-            <img class="app-logo" src="./images/kartoffel-flashcards.png">
-          </a>
-        </div> 
-        <div class="project-item project-item-description">
-          <h3>Kartoffel Flashcards</h3>
-          <p>
-            Simple flashcards App to boost your learnings.
-          </p>
-          <img class="store-logo" src="./images/appstore.svg"> <img class="store-logo" src="./images/playstore.png">
-        </div>  
-      </div>
-      <br />
-      <br />
-      <br />
-      <h2>Developers</h2>
-      <div class="developer-container"> 
-        <div class="developer-item developer-item-image">
-          <img class="developer-image" src="./images/harry.png">
-        </div> 
-        <div class="developer-item developer-item-description">
-          <h3>Harry Lee</h3>
-          <p>
-            Software developer @trivago
-          </p>
-        </div>  
-      </div>
 
-      <br />
-      <br />
-      <br />
-      <h2>Contact Us</h2>
-      <p>If you're interested in learning more about Kartoffelsoft or our services, please don't hesitate to contact us at <a href="mailto:kartoffelsoft@gmail.com">kartoffelsoft@gmail.com</a>. We look forward to hearing from you!</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-brand">
+          <img src="./images/favicon.ico" alt="Kartoffelsoft Logo" class="brand-icon">
+          <span>Kartoffelsoft</span>
+        </a>
 
-      <br />
-      <br />
-      <br />
-      <p>
-        <a href="./apps/music/privacy-policy/">Privacy Policy</a>
-      </p>
-      <p>
-        <a href="./apps/music/google-api-disclosure/">Google API Disclosure</a>
-      </p>
-    </div>
-    <footer>
-      <p>© 2023 Kartoffelsoft. All Rights Reserved.</p>
+        <ul class="nav-links">
+          <li><a href="#apps" class="nav-link">Apps</a></li>
+          <li><a href="#values" class="nav-link">Philosophy</a></li>
+          <li><a href="#developer" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="hero-badge-pulse"></span>
+          <span>Crafting thoughtful tools for daily life</span>
+        </div>
+
+        <h1 class="hero-title">
+          Software built to resolve everyday problems <br>
+          <span class="gradient-text">with speed and simplicity.</span>
+        </h1>
+
+        <p class="hero-description">
+          Kartoffelsoft is an independent software collective creating fast, offline-first, 
+          and privacy-respecting apps for iOS, Android, and macOS.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#apps" class="btn btn-primary">
+            Explore Apps
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- Apps & Projects Section -->
+      <section id="apps" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Our Applications</h2>
+            <p class="section-subtitle">
+              Focused tools engineered to deliver high utility without distractions, data harvesting, or bloat.
+            </p>
+          </div>
+
+          <div class="apps-grid">
+
+            <!-- App 1: Kartoffel Music -->
+            <article class="app-card app-card-featured">
+              <div class="app-header">
+                <img class="app-icon" src="./images/kartoffel-music.png" alt="Kartoffel Music Icon">
+                <div class="app-title-group">
+                  <h3 class="app-title">Kartoffel Music</h3>
+                  <span class="app-tagline">Offline Cloud MP3 Player</span>
+                </div>
+              </div>
+
+              <div class="app-tags">
+                <span class="tag tag-highlight">iOS &amp; Android</span>
+                <span class="tag">Offline First</span>
+                <span class="tag">Google Drive Sync</span>
+              </div>
+
+              <p class="app-description">
+                Keep your MP3 music collection forever. Connect your Google Drive, download tracks straight to your device, and enjoy seamless offline playback anywhere without needing continuous internet connectivity.
+              </p>
+
+              <div class="app-footer">
+                <a href="./apps/music/index.html" class="app-action-link">
+                  Continue reading guide
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <div class="store-badges">
+                  <img class="store-badge-img" src="./images/appstore.svg" alt="App Store badge">
+                  <img class="store-badge-img" src="./images/playstore.png" alt="Google Play badge">
+                </div>
+              </div>
+            </article>
+
+            <!-- App 2: Garden100 -->
+            <article class="app-card app-card-featured">
+              <div class="app-header">
+                <img class="app-icon" src="./images/garden100.png" alt="Garden100 Icon">
+                <div class="app-title-group">
+                  <h3 class="app-title">Garden100</h3>
+                  <span class="app-tagline">US Stock Portfolio Tracker</span>
+                </div>
+              </div>
+
+              <div class="app-tags">
+                <span class="tag tag-emerald">US Stocks</span>
+                <span class="tag">Google Sheets Sync</span>
+                <span class="tag">Zero Server Data</span>
+              </div>
+
+              <p class="app-description">
+                Investing in stocks is like growing a garden. Garden100 is a clean portfolio monitor for US stocks where your data stays strictly in your own Google Sheet. We don't store or collect your portfolio records.
+              </p>
+
+              <div class="app-footer">
+                <a href="./apps/garden100/index.html" class="app-action-link">
+                  Explore Garden100
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <div class="store-badges">
+                  <span class="tag">Web &amp; Mobile</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- App 3: Kartoffel Flashcards -->
+            <article class="app-card">
+              <div class="app-header">
+                <img class="app-icon" src="./images/kartoffel-flashcards.png" alt="Kartoffel Flashcards Icon">
+                <div class="app-title-group">
+                  <h3 class="app-title">Kartoffel Flashcards</h3>
+                  <span class="app-tagline">Accelerated Learning</span>
+                </div>
+              </div>
+
+              <div class="app-tags">
+                <span class="tag">iOS &amp; Android</span>
+                <span class="tag">Productivity</span>
+                <span class="tag">Active Recall</span>
+              </div>
+
+              <p class="app-description">
+                A simple, distraction-free flashcards companion engineered to boost your learning, reinforce retention, and help you master new subjects without ad noise.
+              </p>
+
+              <div class="app-footer">
+                <a href="./apps/flashcards/privacy-policy/index.html" class="app-action-link">
+                  Privacy Policy
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <div class="store-badges">
+                  <img class="store-badge-img" src="./images/appstore.svg" alt="App Store badge">
+                  <img class="store-badge-img" src="./images/playstore.png" alt="Google Play badge">
+                </div>
+              </div>
+            </article>
+
+            <!-- App 4: Kartoffel Screen Pen -->
+            <article class="app-card">
+              <div class="app-header">
+                <div class="app-icon app-icon-vector app-icon-screenpen">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                    <path d="M16 7l-5 5v3h3l5-5-3-3z"/>
+                  </svg>
+                </div>
+                <div class="app-title-group">
+                  <h3 class="app-title">Screen Pen</h3>
+                  <span class="app-tagline">macOS Screen Annotation</span>
+                </div>
+              </div>
+
+              <div class="app-tags">
+                <span class="tag">macOS Utility</span>
+                <span class="tag">Annotation</span>
+                <span class="tag">100% Offline</span>
+              </div>
+
+              <p class="app-description">
+                A lightweight screen annotation tool for macOS. Draw, highlight, and illustrate live over any desktop application during presentations, meetings, or coding walkthroughs.
+              </p>
+
+              <div class="app-footer">
+                <a href="./apps/screen-pen/privacy-policy/index.html" class="app-action-link">
+                  Privacy Policy
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <span class="tag">macOS</span>
+              </div>
+            </article>
+
+            <!-- App 5: Voice Echo -->
+            <article class="app-card">
+              <div class="app-header">
+                <div class="app-icon app-icon-vector app-icon-voiceecho">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    <line x1="12" y1="19" x2="12" y2="23"/>
+                    <line x1="8" y1="23" x2="16" y2="23"/>
+                  </svg>
+                </div>
+                <div class="app-title-group">
+                  <h3 class="app-title">Voice Echo</h3>
+                  <span class="app-tagline">Audio Revision &amp; Recall</span>
+                </div>
+              </div>
+
+              <div class="app-tags">
+                <span class="tag">Audio</span>
+                <span class="tag">Learning</span>
+                <span class="tag">Revision</span>
+              </div>
+
+              <p class="app-description">
+                Reinforce knowledge, memorize concepts, and practice speech recall through focused audio prompts. Simple, intuitive, and designed to help you retain information effortlessly.
+              </p>
+
+              <div class="app-footer">
+                <a href="./apps/voice-echo/privacy-policy/index.html" class="app-action-link">
+                  Privacy Policy
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <span class="tag">Productivity</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Values / Philosophy Section -->
+      <section id="values" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Principles</span>
+            <h2 class="section-title">Built with Integrity</h2>
+            <p class="section-subtitle">
+              We follow three foundational tenets in everything we design and code.
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon-box icon-emerald">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="value-title">Privacy by Default</h3>
+              <p class="value-desc">
+                Your files and financial data belong to you. We store data directly on your device or in your personal Google Drive / Sheets. No surveillance, tracking pixels, or data brokering.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box icon-blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <h3 class="value-title">Offline-First Design</h3>
+              <p class="value-desc">
+                Software should work even when the connection fails. Our apps ensure core playback, tracking, and editing experiences remain fully functional without internet access.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box icon-purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <h3 class="value-title">Focused &amp; Uncluttered</h3>
+              <p class="value-desc">
+                No subscription walls for basic features, no spam push notifications, and no confusing UI. We construct clean, intentional tools that do one job exceptionally well.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Developer Section -->
+      <section id="developer" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Team</span>
+            <h2 class="section-title">Developer</h2>
+            <p class="section-subtitle">
+              The engineer behind Kartoffelsoft projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-card">
+            <span class="section-label">Reach Out</span>
+            <h2>Let's talk.</h2>
+            <p>
+              Interested in learning more about Kartoffelsoft, reporting an issue, or sharing suggestions? We'd love to hear from you.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:kartoffelsoft@gmail.com" class="btn btn-primary" title="Send email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Send an Email</span>
+              </a>
+              <button type="button" class="btn btn-secondary" id="copy-email-btn" title="Copy email address to clipboard">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copy-btn-text">Copy Email Address</span>
+              </button>
+            </div>
+            <div id="copy-status" class="copy-feedback"></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          
+          <div class="footer-brand">
+            <h4>
+              <img src="./images/favicon.ico" alt="Logo" width="22" height="22">
+              Kartoffelsoft
+            </h4>
+            <p>
+              Independent software studio building thoughtful, offline-ready, and privacy-respecting tools for daily life.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h5>Apps</h5>
+            <ul>
+              <li><a href="./apps/music/index.html">Kartoffel Music</a></li>
+              <li><a href="./apps/garden100/index.html">Garden100</a></li>
+              <li><a href="./apps/flashcards/privacy-policy/index.html">Kartoffel Flashcards</a></li>
+              <li><a href="./apps/screen-pen/privacy-policy/index.html">Screen Pen</a></li>
+              <li><a href="./apps/voice-echo/privacy-policy/index.html">Voice Echo</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h5>Legal &amp; Privacy</h5>
+            <ul>
+              <li><a href="./apps/music/privacy-policy/">Music Privacy Policy</a></li>
+              <li><a href="./apps/music/google-api-disclosure/">Google API Disclosure</a></li>
+              <li><a href="./apps/garden100/privacy-policy/">Garden100 Privacy</a></li>
+              <li><a href="./apps/garden100/terms-of-service/">Garden100 Terms</a></li>
+              <li><a href="./apps/screen-pen/privacy-policy/">Screen Pen Privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="mailto:kartoffelsoft@gmail.com">kartoffelsoft@gmail.com</a></li>
+              <li><a href="#apps">Applications</a></li>
+              <li><a href="#values">Our Philosophy</a></li>
+              <li><a href="#developer">Developer</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">&copy; 2026 Kartoffelsoft. All Rights Reserved.</p>
+          <p class="footer-copyright">Crafted with care &bull; intro.kartoffel.cc</p>
+        </div>
+      </div>
     </footer>
+
+    <!-- Script for copy to clipboard -->
+    <script>
+      const copyBtn = document.getElementById('copy-email-btn');
+      const copyBtnText = document.getElementById('copy-btn-text');
+      const copyStatus = document.getElementById('copy-status');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText('kartoffelsoft@gmail.com').then(() => {
+            if (copyBtnText) copyBtnText.textContent = 'Copied to clipboard!';
+            if (copyStatus) {
+              copyStatus.textContent = 'Email address (kartoffelsoft@gmail.com) copied!';
+              copyStatus.classList.add('visible');
+            }
+            setTimeout(() => {
+              if (copyBtnText) copyBtnText.textContent = 'Copy Email Address';
+              if (copyStatus) copyStatus.classList.remove('visible');
+            }, 3000);
+          }).catch(() => {
+            if (copyBtnText) copyBtnText.textContent = 'kartoffelsoft@gmail.com';
+          });
+        });
+      }
+    </script>
   </body>
 </html>
